@@ -4,6 +4,8 @@ EXPOSE 5000
 
 ENV SUBSONIC_TARGET ""
 
+WORKDIR /root
+
 COPY . .
 
 RUN pip install --no-cache-dir .
