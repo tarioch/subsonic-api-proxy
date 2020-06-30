@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir .
 
 USER 1001
 
-CMD subsonic-api-proxy "$SUBSONIC_TARGET"
+CMD subsonic-api-proxy -t "$SUBSONIC_TARGET"
