@@ -70,7 +70,7 @@ def main(args):
     args = parse_args(args)
     setup_logging(args.loglevel)
     app.config['target'] = args.target
-    app.run()
+    app.run(host="0.0.0.0")
 
 
 def run():
