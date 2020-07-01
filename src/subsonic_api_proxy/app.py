@@ -106,4 +106,4 @@ def call(operation):
         resp = requests.get(
             f'{target}/rest/{operation}', stream=True, params=args)
 
-        return resp.raw.read(), resp.status_code, resp.headers.items()
+        return resp.content, resp.status_code, resp.headers.items()
